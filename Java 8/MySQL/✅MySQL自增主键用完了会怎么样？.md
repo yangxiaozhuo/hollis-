@@ -32,3 +32,10 @@ MySQL中的自增主键用完是一个相对罕见的情况，但确实可能发
    - 考虑使用 UUID（通用唯一标识符）作为主键。UUID 是128位长，几乎不可能用完。但这会增加存储需求，并可能影响性能。
 
 [✅uuid和自增id做主键哪个好，为什么？](https://www.yuque.com/hollis666/fo22bm/uted9tvkngs62pmu?view=doc_embed)
+
+4. **分布式ID（推荐）**：
+   - 如果自增主键都不够了，那么就可以考虑使用分布式ID了，虽然引入有一定成本，但是这么大的数据量的话也值得考虑点更牛X的技术了，可以考虑雪花算法或者Leaf等。
+   - <br />
+
+[✅分布式ID生成方案都有哪些？](https://www.yuque.com/hollis666/fo22bm/cdfb2w?view=doc_embed)
+
